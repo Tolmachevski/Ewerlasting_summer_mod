@@ -5,7 +5,7 @@ init:
     $ coc = Character(u'Соседка', color="C8FFC8", what_color="E2C778")
     $ mama = Character(u'Мама', color="FFC0CB", what_color="E2C778")
     $ my_life = 0
-    
+
        ## Дождь
     image TEST_raindrop_large = "mods/delaymod/Image/raindrop_large.png"
     image TEST_raindrop_normal = "mods/delaymod/Image/raindrop_normal.png"
@@ -28,13 +28,13 @@ init:
             SnowBlossom("TEST_raindrop_normal", 25, 50, (50, 100), (1500, 1600))
         contains:
             SnowBlossom("TEST_raindrop_small", 150, 50, (25, 50), (1400, 1500))
-            
+
     image TEST_hard_rain:
         contains:
             "TEST_rain"
         contains:
             "TEST_rain"
-            
+
     ## Снег
     image TEST_snowflake_large = "mods/delaymod/Image/snowflake_large.png"
     image TEST_snowflake_normal = "mods/delaymod/Image/snowflake_normal.png"
@@ -153,7 +153,7 @@ label nolevoi_den:
     "И вот она: похоть, чувство возвышения над другими, лицедейство, пассивная злоба, про издевательство над детьми я вообще молчу..."
     "Последней каплей стало то, что зимой я, просто прогуливаясь по парку, случайно встретил группу подростков, которые издевались над маленьким котёнком"
     "Человек пять-шесть. Среди них были две девчонки. Они кричали: \"Да оторви ты ему хвост, и все!\"."
-    "Было слышно, как он пищал от безисходности." 
+    "Было слышно, как он пищал от безисходности."
     "Этот писк... {w} Как он рвал моё сердце."
     "Я побежал к ним. Какой-то пацан поднял котёнка прямо за хвост. К счастью, я успел выхватить беднягу. Похоже, что подросток хотел кинуть его прямо на землю"
     "Я так хотел набить им лицо, но не мог, нужно же думать о последствиях"
@@ -181,14 +181,14 @@ label nolevoi_den:
     "Я возненавидел его всей душой, и он тоже меня недолюбливал"
     "От меня ему нужно было только то, сделал ли я уроки и убрался ли во всём доме"
     "В конце концов я перестал общаться с ним. Весь наш диалог состоит из \"Привет" - "Пока\"."
-    hide TEST_light_snow 
+    hide TEST_light_snow
     with fade3
     show image prix
     "В итоге я добрался до дома. Незнаю, как отреагирует отчим на новое существо в доме"
     "Дёрнув дверную ручку, я понял, что дома никого нет"
     th "Ещё бы, кто меня дома ждёт?"
     "Раздевшись, я отнёс котёнка в комнату"
-    play sound sfx_close_door_clubs_nextroom 
+    play sound sfx_close_door_clubs_nextroom
     "Быстро переоделся и хотел уже идти на кухню кормить котенка, как услышал звук двери"
     "Похоже, что он пришёл"
     "Я вышел в коридор и думал сказать клишированное \"Привет\", но заметил, что он пришёл не один"
@@ -232,7 +232,7 @@ label nolevoi_den:
     "Во мне кипела ярость, что относительно чужда для меня. {w} Я довольно спокойный человек и на простые провокации не ведусь, но как же я тогда был зол..."
     "Я быстро встал и оттолкнул его от себя, он,{w} видимо, {w} не ожидал такой реакции и прильнул к столу"
     "Подскочив к нему, я хотел ударить его со всей силы, но он блокировал мою правую руку и ударил мне по лицу"
-    play sound sfx_fall_wood_floor  
+    play sound sfx_fall_wood_floor
     "Я полетел прямо на пол. Отчим хотел подойти ко мне"
     me "НЕ ТРОГАЙ МЕНЯ!!!"
     "Он остановился и посмотрел на меня"
@@ -256,7 +256,7 @@ label nolevoi_den:
     "Я уже оделся"
     with fade2
     "Даже не выйдет... ну и ладно"
-    play sound sfx_close_door_clubs_nextroom 
+    play sound sfx_close_door_clubs_nextroom
     "С этой мыслью я вышел из дома"
     scene black with dspr
     scene bg bus_stop with dissolve
@@ -278,7 +278,7 @@ label nolevoi_den:
     hide TEST_light_snow with dissolve
     scene black with dissolve
     with fade3
-    
+
     "Когда я пришёл в свою квартиру, был уже поздний вечер"
     "Пошарившись по карманам, я не нашел телефона"
     me "Отлично, я оставил его дома"
@@ -291,7 +291,7 @@ label nolevoi_den:
     show unblink
     "И закрыл глаза"
     scene black with dissolve
-    
+
     with fade2
     "Сон"
     "Прекрасное время, чтобы провести свою мятежную жизнь в таком тихом месте"
@@ -317,10 +317,10 @@ label nolevoi_den:
             $ my_life += 1
             jump denek_1
         "Нет":
-            
+
             jump Ploxoi
-        
-        
+
+
     label Ploxoi:
         me "Я же сказал тебе, что такого не бывает."
         go "Вот как..."
@@ -328,14 +328,14 @@ label nolevoi_den:
         go "..."
         scene black with dissolve
         with fade3
-        
+
         "Проснулся я в отвратительном настроении."
         "Будто пять минут поспал всего."
         "Всё... Мне так всё надоело."
         "Я встал с кресла, взял котёнка с собой"
         "Нужно отдать его соседке"
         scene black with dissolve
-        
+
         with fade2
         "Через минуту я уже стоял у двери чужой квартиры."
         "Позвонив в звонок, мне открыла женщина."
@@ -379,36 +379,6 @@ label nolevoi_den:
         scene black with dissolve
         play sound sfx_intro_bus_stop_sigh
         with fade3
-        play sound sfx_body_bump 
+        play sound sfx_body_bump
         with fade3
         return
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
